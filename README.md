@@ -14,6 +14,8 @@
   </a>
 </div>
 
+> **_NOTE:_**  This is a proof-of-concept and not production ready. Rather, I would advice again using SNS and SQS for the transport layer of NestJS microservices. Reason being that neither SNS nor SQS has adequate support to *push* messages to a client. SQS exclusively supports long-polling, while SNS only supports pushing messages to HTTP endpoints.
+
 ## Author
 
 **Marc Römmelt**
